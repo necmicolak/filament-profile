@@ -18,6 +18,8 @@ class Profile extends Page implements HasForms
 
     protected static ?string $navigationGroup = 'Hesap';
 
+    protected static ?string $title = 'Hesap';
+
     protected static string $view = 'filament-profile::filament.pages.profile';
 
     public $name;
@@ -85,13 +87,13 @@ class Profile extends Page implements HasForms
             Section::make('Genel')
                 ->columns(2)
                 ->schema([
-                    TextInput::make('name')
+                    TextInput::make('name')->label('Ad Soyad')
                         ->required(),
                     TextInput::make('email')
                         ->label('Email')
                         ->required(),
                 ]),
-            Section::make('Update Password')
+            Section::make('Şifre Değiştir')
                 ->columns(2)
                 ->schema([
                     TextInput::make('current_password')
