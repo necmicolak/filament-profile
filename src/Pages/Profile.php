@@ -16,7 +16,7 @@ class Profile extends Page implements HasForms
 
     protected static ?string $navigationIcon = 'heroicon-o-user';
 
-    protected static ?string $navigationGroup = 'Account';
+    protected static ?string $navigationGroup = 'Hesap';
 
     protected static string $view = 'filament-profile::filament.pages.profile';
 
@@ -57,7 +57,7 @@ class Profile extends Page implements HasForms
         }
 
         $this->reset(['current_password', 'new_password', 'new_password_confirmation']);
-        $this->notify('success', 'Your profile has been updated.');
+        $this->notify('success', 'Profiliniz güncellendi.');
     }
 
     private function updateSessionPassword($user)
@@ -75,27 +75,27 @@ class Profile extends Page implements HasForms
     protected function getBreadcrumbs(): array
     {
         return [
-            url()->current() => 'Profile',
+            url()->current() => 'Profil',
         ];
     }
 
     protected function getFormSchema(): array
     {
         return [
-            Section::make('General')
+            Section::make('Genel')
                 ->columns(2)
                 ->schema([
                     TextInput::make('name')
                         ->required(),
                     TextInput::make('email')
-                        ->label('Email Address')
+                        ->label('Email')
                         ->required(),
                 ]),
             Section::make('Update Password')
                 ->columns(2)
                 ->schema([
                     TextInput::make('current_password')
-                        ->label('Current Password')
+                        ->label('Şuanki Şifre')
                         ->password()
                         ->rules(['required_with:new_password'])
                         ->currentPassword()
@@ -104,12 +104,12 @@ class Profile extends Page implements HasForms
                     Grid::make()
                         ->schema([
                             TextInput::make('new_password')
-                                ->label('New Password')
+                                ->label('Yeni Şifre')
                                 ->password()
                                 ->rules(['confirmed'])
                                 ->autocomplete('new-password'),
                             TextInput::make('new_password_confirmation')
-                                ->label('Confirm Password')
+                                ->label('Yeni Şifre Onayla')
                                 ->password()
                                 ->rules([
                                     'required_with:new_password',
