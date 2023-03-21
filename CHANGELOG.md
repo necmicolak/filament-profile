@@ -2,6 +2,18 @@
 
 All notable changes to `filament-profile` will be documented in this file.
 
+## v0.3.0 - 2023-03-21
+
+### What's Changed
+
+- add support for laravel 10 by @cobraprojects in https://github.com/ryangjchandler/filament-profile/pull/26
+
+### New Contributors
+
+- @cobraprojects made their first contribution in https://github.com/ryangjchandler/filament-profile/pull/26
+
+**Full Changelog**: https://github.com/ryangjchandler/filament-profile/compare/v0.2.2...v0.3.0
+
 ## v0.2.2 - 2022-12-13
 
 ### What's Changed
