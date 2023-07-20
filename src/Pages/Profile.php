@@ -62,7 +62,7 @@ class Profile extends Page implements HasForms
         $this->notify('success', 'Profiliniz güncellendi.');
     }
 
-    private function updateSessionPassword($user)
+    protected function updateSessionPassword($user)
     {
         request()->session()->put([
             'password_hash_' . auth()->getDefaultDriver() => $user->getAuthPassword(),

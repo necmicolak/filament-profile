@@ -2,6 +2,32 @@
 
 All notable changes to `filament-profile` will be documented in this file.
 
+## v0.3.0 - 2023-03-21
+
+### What's Changed
+
+- add support for laravel 10 by @cobraprojects in https://github.com/ryangjchandler/filament-profile/pull/26
+
+### New Contributors
+
+- @cobraprojects made their first contribution in https://github.com/ryangjchandler/filament-profile/pull/26
+
+**Full Changelog**: https://github.com/ryangjchandler/filament-profile/compare/v0.2.2...v0.3.0
+
+## v0.2.2 - 2022-12-13
+
+### What's Changed
+
+- chore(deps): bump dependabot/fetch-metadata from 1.3.3 to 1.3.4 by @dependabot in https://github.com/ryangjchandler/filament-profile/pull/20
+- chore(deps): bump dependabot/fetch-metadata from 1.3.4 to 1.3.5 by @dependabot in https://github.com/ryangjchandler/filament-profile/pull/22
+- feat: changed updateSessionPassword from private to protected by @jaetoole in https://github.com/ryangjchandler/filament-profile/pull/24
+
+### New Contributors
+
+- @jaetoole made their first contribution in https://github.com/ryangjchandler/filament-profile/pull/24
+
+**Full Changelog**: https://github.com/ryangjchandler/filament-profile/compare/v0.2.1...v0.2.2
+
 ## v0.2.1 - 2022-08-11
 
 ### What's Changed
